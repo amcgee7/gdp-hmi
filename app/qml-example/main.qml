@@ -17,7 +17,7 @@
 
 import QtQuick 2.3
 import QtQuick.Controls 1.2
-import QtMultimedia 5.6
+import QtMultimedia 5.5
 
 Rectangle {
     id: window
