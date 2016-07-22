@@ -22,8 +22,8 @@ import QtMultimedia 5.5
 Rectangle {
     id: window
     visible: true
-    width: 600
-    height: 480
+    width: 768
+    height: 1024
 
     signal qmlSignal(string msg)
 
@@ -84,8 +84,11 @@ Rectangle {
             anchors.leftMargin: 24
             placeholderText: qsTr("Text Field")
         }
-        Item {
-
+        Rectangle {
+			id: cameraview
+			visible: true
+			width: 768
+			height: 512
             Camera {
                 id: camera
             }
@@ -112,7 +115,7 @@ Rectangle {
     }
 	Component.onCompleted:
 	{
-		textFieldOne.text = QtMultimedia.availableCameras;
+		textFieldOne.text = QtMultimedia.availableCameras.itemAt(0);
 	}
 
     MouseArea {
