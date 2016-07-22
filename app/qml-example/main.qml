@@ -110,6 +110,10 @@ Rectangle {
             }
         }
     }
+	Component.onCompleted:
+	{
+		textFieldOne.text = QtMultimedia.availableCameras;
+	}
 
     MouseArea {
         id: mouseArea

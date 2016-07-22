@@ -8,6 +8,22 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=815ca599c9df247a0c7f619bab123dad"
 
 DEPENDS = "wayland-ivi-extension weston dbus-c++ dbus-c++-native systemd"
 
+RDEPENDS = " \
+	alsa-utils-aplay \
+	pulseaudio \
+	pulseaudio-server \
+	pulseaudio-module-native-protocol-tcp \
+	gstreamer1.0 \
+	gstreamer1.0-libav \
+	gstreamer1.0-plugins-good \
+	gstreamer1.0-plugins-bad \
+	gstreamer1.0-plugins-base \
+	gstreamer1.0-plugins-ugly \
+	gstreamer1.0-plugins-good-meta \
+	gstreamer1.0-plugins-bad-meta \
+	gstreamer1.0-plugins-base-meta \
+	gstreamer1.0-plugins-ugly-meta \
+
 # SRC_URI = "git://git.projects.genivi.org/genivi-demo-platform-hmi.git"
 # SRCREV = ""
 # S = "${WORKDIR}/git"
