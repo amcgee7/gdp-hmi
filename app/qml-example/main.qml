@@ -89,8 +89,6 @@ Rectangle {
 			visible: true
 			color: "green"
 			width: parent.width
-			height: parent.height * 0.5
-			anchors.bottom: parent.bottom
 			anchors.horizontalCenter: parent.horizontalCenter
             Camera {
                 id: camera
