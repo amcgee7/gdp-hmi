@@ -86,10 +86,15 @@ Rectangle {
         }
         Rectangle {
 			id: cameraview
-			visible: true
-			color: "green"
-			width: parent.width
-			anchors.horizontalCenter: parent.horizontalCenter
+            x: 0
+            y: 200
+            width: 768
+            height: 550
+            visible: true
+            color: "green"
+            clip: false
+            border.color: "#e53535"
+
             Camera {
                 id: camera
             }
