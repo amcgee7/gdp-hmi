@@ -83,6 +83,31 @@ Rectangle {
             anchors.leftMargin: 24
             placeholderText: qsTr("Text Field")
         }
+        Item {
+
+            Camera {
+                id: camera
+            }
+
+            VideoOutput {
+                anchors.fill: parent
+                source: camera
+            }
+
+            ListView {
+                anchors.fill: parent
+
+                model: QtMultimedia.availableCameras
+                delegate: Text {
+                    text: modelData.displayName
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: camera.deviceId = modelData.deviceId
+                    }
+                }
+            }
+        }
     }
 
     MouseArea {
