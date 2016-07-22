@@ -87,8 +87,11 @@ Rectangle {
         Rectangle {
 			id: cameraview
 			visible: true
-			width: 768
-			height: 512
+			color: "green"
+			width: parent.width
+			height: parent.height * 0.5
+			anchors.bottom: parent.bottom
+			anchors.horizontalCenter: parent.horizontalCenter
             Camera {
                 id: camera
             }
@@ -115,7 +118,7 @@ Rectangle {
     }
 	Component.onCompleted:
 	{
-		textFieldOne.text = QtMultimedia.availableCameras.itemAt(0);
+		textFieldOne.text = QtMultimedia.availableCameras.at(0).deviceName();
 	}
 
     MouseArea {
