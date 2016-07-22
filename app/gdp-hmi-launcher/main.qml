@@ -21,8 +21,8 @@ import QtQuick.Controls 1.2
 Rectangle {
     id: gdp_launcher
     visible: true
-    width: 1024
-    height: 768
+    width: 768
+    height: 1024
     color: "steelblue"
     opacity: 1.0
 

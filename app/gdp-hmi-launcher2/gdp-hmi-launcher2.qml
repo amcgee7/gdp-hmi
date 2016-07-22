@@ -21,8 +21,8 @@ import "content"
 Item {
     id: mainView
 
-    width: 1024
-    height: 768
+    width: 768
+    height: 1024
     property int lastIndex: GDPLauncher2.getLastAppIndex();
 
     signal appSelectSignal(string unit)
